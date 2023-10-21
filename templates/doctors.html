@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+<div class="row">
+
+{% for sect in doct %}
+  <div class="col-md-3 my-3">
+<div class="card" style="width: 18rem;">
+  <a href="/detailsview/{{sect.id}}/">
+  <img src="{{sect.doctimage.url}}" class="card-img-top" alt="...">
+    </a>
+  <div class="card-body">
+    <h5 class="card-title">{{sect.doctortable}}</h5>
+    <p class="card-text">{{sect.docspec}}</p>
+    <h3>{{sect.department}}</h3>
+    <a href="#" class="btn btn-primary"></a>
+  </div>
+</div>
+</div>
+{% endfor%}
+
+</div>
+{% endblock %}

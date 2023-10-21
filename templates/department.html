@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+{% for item  in dept %}
+ <div class="container" style="text-align:center;background-color:#6495ED;height:150px;">
+     <div class="row mt-5">
+         <h1>{{item.department}}</h1>
+         <p> {{item.description}}</p>
+     </div>
+ </div>
+{% endfor%}
+{% endblock %}

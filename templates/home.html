@@ -1,0 +1,80 @@
+{%extends 'base.html'%}
+{% block content %}
+{% load static %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/images/slide1.jpg' %}" class="d-block w-100" alt="..."style="height:600px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/slide4.jpg' %}" class="d-block w-100" alt="..."style="height:600px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/slide5.jpg' %}" class="d-block w-100" alt="..."style="height:600px;">
+    </div>
+  </div>
+</div>
+<div class ="container">
+<div class="row mt-5">
+
+    <div class="col-md-6">
+      <h1>OUR VISION</h1>
+
+  <p style="margin-left:0px;">Proclaim the glory of God through quality based
+    compassionate healthcare services, bearing witnesstoCHRIST.
+  </p>
+        </div>
+    <div class="col-md-6">
+    <img src="{% static '/images/image3.jpg' %}"  alt="..." style="height:500px;width:500px;" >
+    </div>
+    </div>
+  </div>
+
+
+
+<div class ="container">
+<div class="row mt-5">
+
+    <div class="col-md-6">
+      <h1>OUR MISSION</h1>
+
+  <p style="margin-left:0px;">Proclamation of the good news that life -
+    a gift from GOD is worth living, through holistic care
+    to the physically, mentally or spiritually wounded people.
+    Founding all our health care services
+    on Christian values and rendering the same to
+    all people irrespective of religion, caste or
+    community with a preferential option for the downtrodden and underprivileged.
+    Contribute
+    to the better quality of healthcare system in the
+    society by training nurses with knowledge, skillsandvalues.
+  </p>
+        </div>
+    <div class="col-md-6">
+    <img src="{% static '/images/image2.jpg' %}"  alt="..." style="height:400px;width:500px;" >
+    </div>
+    </div>
+  </div>
+
+
+
+
+<div class ="container">
+<div class="row mt-5">
+
+    <div class="col-md-6">
+      <h1>OUR QUALITY</h1>
+
+  <p style="margin-left:0px;">Nirmala Medical Centre is committed to provide high quality
+    and affordable health care through well defined quality systems and efficient
+    professionals and will actively
+    pursue ever improving quality through periodictraining.
+  </p>
+        </div>
+    <div class="col-md-6">
+    <img src="{% static '/images/image1.jpg' %}"  alt="..." style="height:400px;width:500px;" >
+    </div>
+    </div>
+  </div>
+
+{% endblock %}
